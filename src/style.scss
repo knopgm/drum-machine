@@ -18,8 +18,9 @@ li {
 }
 
 body {
-  background: #536DFE;
-  font-family: Roboto, sans-serif;
+  //background: linear-gradient(#63a583, #6e93d6);
+  background: linear-gradient(#ea700b, #f0b51f);
+  font-family: "Poppins", sans-serif;
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -31,7 +32,7 @@ body {
 
 .drum-pads {
   width: 100vw;
-  background: silver;
+  background: #e4dbd9;
   border-radius: 8px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -45,3 +46,6 @@ body {
   }
 }
 
+a {
+  text-decoration: none;
+}

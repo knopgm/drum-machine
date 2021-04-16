@@ -1,0 +1,32 @@
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  //color: #2f4c58;
+  color: #111b1e;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+// .author {
+//   transition: all 0.2s ease;
+// }
+.author:hover {
+  .highlighted {
+    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 70%, #ff836d 0);
+  }
+}
+
+.contact-details {
+  //color: #2f4c58;
+  color: #111b1e;
+  padding: 6px;
+  font-size: 26px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.contact-details:hover {
+  transform: translateY(-10px);
+}
