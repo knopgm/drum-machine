@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "no-console": 1,
+    "jsx-a11y/media-has-caption": 0
+  },
+  "plugins": ["import", "react", "jsx-a11y"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "commonjs": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      },
+      "alias": [
+        // I have my actions folder in ./shared/actions
+        ["icons", "./src/icons"]
+      ]
+    }
+  }
+}

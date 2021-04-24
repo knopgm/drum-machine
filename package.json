@@ -6,12 +6,23 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "format": "prettier \"src/**/*.{js,jsx,html,css}\" --write"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "parcel-bundler": "^1.12.5",
+    "prettier": "^2.2.1",
     "sass": "^1.32.8"
   },
   "dependencies": {

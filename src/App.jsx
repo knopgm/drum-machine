@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { DrumPad } from "./components/DrumPad/DrumPad";
 import { Head } from "./components/Head/Head";

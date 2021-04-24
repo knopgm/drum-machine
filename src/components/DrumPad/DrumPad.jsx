@@ -18,7 +18,7 @@ export class DrumPad extends React.Component {
     document.addEventListener("keydown", this.handleKeyDown);
   }
 
-  handleOnClick(e) {
+  handleOnClick() {
     this.playSound();
   }
 
@@ -42,20 +42,18 @@ export class DrumPad extends React.Component {
     const { playing } = this.state;
 
     return (
-      <>
-        <motion.div
-          className="drum-pad"
-          onClick={this.handleOnClick}
-          animate={{
-            background: playing ? this.props.bgColorslight : this.props.bgColor,
-            boxShadow: playing ? "0 0 0 transparent" : "5px 5px 5px grey",
-            scale: playing ? 0.8 : 1.0,
-          }}
-        >
-          <div className="drum-pad__content">{this.props.label}</div>
-        </motion.div>
-        <audio ref={this.audioRef} src={this.props.audioSrc}></audio>
-      </>
+      <motion.div
+        className="drum-pad"
+        onClick={this.handleOnClick}
+        animate={{
+          background: playing ? this.props.bgColorslight : this.props.bgColor,
+          boxShadow: playing ? "0 0 0 transparent" : "5px 5px 5px grey",
+          scale: playing ? 0.8 : 1.0,
+        }}
+      >
+        <div className="drum-pad__content">{this.props.label}</div>
+        <audio ref={this.audioRef} src={this.props.audioSrc} />
+      </motion.div>
     );
   }
 }
