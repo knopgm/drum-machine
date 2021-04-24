@@ -79,11 +79,10 @@ const bgColorslight = [
 
 export function App() {
   return (
-    <>
-      <Head />
+    <div className="wrapper">
+      <Head title="Play Drums" />
       <div className="drum-pads">
         {bankOne.map((item, index) => {
-          console.log({ item, index, bgColors });
           return (
             <DrumPad
               key={item.keyTrigger}
@@ -97,6 +96,6 @@ export function App() {
         })}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

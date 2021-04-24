@@ -10,7 +10,7 @@ export function Footer() {
       </div>
       <div className="links">
         <a
-          href="https://github.com/knopgm"
+          href="https://www.linkedin.com/in/gabriela-knop-marques-b5075a53/"
           target="_blank"
           rel="noreferrer"
           className="contact-details"
@@ -19,7 +19,7 @@ export function Footer() {
         </a>
         <a
           id="profile-link"
-          href="https://github.com/knopgm"
+          href="https://github.com/knopgm/drum-machine"
           target="_blank"
           rel="noreferrer"
           className="contact-details"
