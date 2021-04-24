@@ -11,13 +11,7 @@ export class DrumPad extends React.Component {
     this.handleKeyDown = this.handleKeyDown.bind(this);
     this.handleOnClick = this.handleOnClick.bind(this);
 
-    //let targetRotation = Math.floor(Math.random() * 15) + 1; // this will get a number between 1 and 15;
-    //targetRotation *= Math.round(Math.random()) ? 1 : -1; // this will add minus sign in 50% of cases
-
-    this.state = {
-      playing: false,
-      //targetRotation
-    };
+    this.state = { playing: false };
   }
 
   componentDidMount() {
@@ -25,7 +19,6 @@ export class DrumPad extends React.Component {
   }
 
   handleOnClick(e) {
-    console.log(e);
     this.playSound();
   }
 
@@ -47,8 +40,6 @@ export class DrumPad extends React.Component {
 
   render() {
     const { playing } = this.state;
-
-    console.log(this.props);
 
     return (
       <>
